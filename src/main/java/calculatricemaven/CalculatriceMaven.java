@@ -4,6 +4,14 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+/**
+ * 
+ * @author Gauthier Puertas
+ * Calculatrice réalisée pour le TP Maven, 
+ * prends des inputs utilisateur et retourne le résultat de l'opération saisie
+ *
+ */
+
 public class CalculatriceMaven {
 
 	public static void main(String[] args) {
@@ -29,7 +37,7 @@ public class CalculatriceMaven {
         String inputStr=null;
         final String WORD_TO_QUIT = "quit";
         
-		//Création d'un ArrayList à partir des arguments de la console
+		//Création d'un ArrayList à partir de la saisie utilisateur
         while(!stop)
         {
         	if(keyboard.hasNextLine())
