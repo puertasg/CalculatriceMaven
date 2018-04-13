@@ -10,12 +10,26 @@ public class CalculatriceMaven {
         int res = 0;
         List<String> l = new ArrayList<String>();
         
-        Scanner keyboard = new Scanner(System.in);
+        creationListe(l);
+        
+        while(l.size() != 1)
+        {
+            res = calcul(l);
+            l.subList(0, 3).clear();
+            l.add(0, Integer.toString(res));
+        }
+        
+        System.out.println("Le résutat est : " + l.get(0));
+    }
+	
+	public static void creationListe(List<String> l)
+	{
+		Scanner keyboard = new Scanner(System.in);
         boolean stop = false;
         String inputStr=null;
         final String WORD_TO_QUIT = "quit";
         
-        //Création d'un ArrayList à partir des arguments de la console
+		//Création d'un ArrayList à partir des arguments de la console
         while(!stop)
         {
         	if(keyboard.hasNextLine())
@@ -32,16 +46,8 @@ public class CalculatriceMaven {
         	}
         }
         
-        while(l.size() != 1)
-        {
-            res = calcul(l);
-            l.subList(0, 3).clear();
-            l.add(0, Integer.toString(res));
-        }
-        
-        System.out.println("Le résutat est : " + l.get(0));
         keyboard.close();
-    }
+	}
 	
 	public static int calcul(List<String> l)
     {
@@ -73,13 +79,4 @@ public class CalculatriceMaven {
         
         return res;
     }
-	
-	public static void afficherliste(List<String> l)
-    {
-        for(int i = 0; i < l.size(); i++)
-        {
-            System.out.println(l.get(i));
-        }
-    }
-
 }
