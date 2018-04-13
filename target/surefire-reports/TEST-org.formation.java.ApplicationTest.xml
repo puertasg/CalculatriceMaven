@@ -68,5 +68,5 @@
   <testcase classname="org.formation.java.ApplicationTest" name="testSoustraction" time="0.002"/>
   <testcase classname="org.formation.java.ApplicationTest" name="testMultiplication" time="0"/>
   <testcase classname="org.formation.java.ApplicationTest" name="testAddition" time="0"/>
-  <testcase classname="org.formation.java.ApplicationTest" name="testDivision" time="0"/>
+  <testcase classname="org.formation.java.ApplicationTest" name="test4Division" time="0"/>
 </testsuite>

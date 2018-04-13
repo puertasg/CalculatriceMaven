@@ -30,6 +30,7 @@ public class Calculatrice {
         }
         catch(ArithmeticException e)
         {
+        	System.out.println("Division par 0!");
             return 0;
         }
     }
