@@ -1,5 +1,13 @@
 package calculatricemaven;
 
+/**
+ * 
+ * @author Gauthier Puertas
+ * Classe qui possède une méthode pour chaque type d'opération, prends en entrée 2 int et 
+ * retourne le résultat de l'opération (en int)
+ *
+ */
+
 public class Calculatrice {
     
     public Calculatrice()
