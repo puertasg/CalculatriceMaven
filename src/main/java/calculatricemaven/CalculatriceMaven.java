@@ -23,8 +23,6 @@ public class CalculatriceMaven {
         		inputStr = keyboard.nextLine();
         		l.add(inputStr);
         		
-        		//System.out.println(l.size());
-        		
         		if(WORD_TO_QUIT.equals(inputStr))
         		{
         			stop=true;
@@ -34,8 +32,6 @@ public class CalculatriceMaven {
         	}
         }
         
-        //afficherliste(l);
-        
         while(l.size() != 1)
         {
             res = calcul(l);
@@ -44,6 +40,7 @@ public class CalculatriceMaven {
         }
         
         System.out.println("Le résutat est : " + l.get(0));
+        keyboard.close();
     }
 	
 	public static int calcul(List<String> l)
