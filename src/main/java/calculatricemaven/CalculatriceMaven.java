@@ -30,6 +30,12 @@ public class CalculatriceMaven {
         System.out.println("Le résutat est : " + l.get(0));
     }
 	
+	/**
+	 * 
+	 * @param l, ArrayList instanciée dans le main
+	 * Ajoute les données saisies par l'utilisateur dans la liste l
+	 */
+	
 	public static void creationListe(List<String> l)
 	{
 		Scanner keyboard = new Scanner(System.in);
@@ -56,6 +62,12 @@ public class CalculatriceMaven {
         
         keyboard.close();
 	}
+	
+	/**
+	 * 
+	 * @param l, ArrayListe contenant les données saisies par l'utilisateur
+	 * @return int, contient la valeur retournée par la méthode appelée de l'objet calc
+	 */
 	
 	public static int calcul(List<String> l)
     {
