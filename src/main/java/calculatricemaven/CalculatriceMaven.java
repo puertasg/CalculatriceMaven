@@ -14,6 +14,7 @@ public class CalculatriceMaven {
         boolean stop = false;
         String inputStr=null;
         final String WORD_TO_QUIT = "quit";
+        
         //Création d'un ArrayList à partir des arguments de la console
         while(!stop)
         {
