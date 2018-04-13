@@ -24,14 +24,16 @@ public class Calculatrice {
     
     public int division(int a, int b)
     {
-        try
+    	return a/b;
+        /*try
         {
             return a/b;
         }
         catch(ArithmeticException e)
         {
         	System.out.println("Division par 0!");
-            return 0;
-        }
+        	System.exit(0);
+        	return 0;
+        }*/
     }
 }

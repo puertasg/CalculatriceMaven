@@ -34,4 +34,19 @@ public class ApplicationTest extends TestCase{
 		Calculatrice c = new Calculatrice();
 		assertTrue(c.division(8, 2) == 4);
 	}
+	
+	public void testDivisionParZero()
+	{
+		Calculatrice c = new Calculatrice();
+		
+		try
+		{
+			c.division(1, 0);
+			assertTrue(false);
+		}
+		catch(ArithmeticException e)
+		{
+			assertTrue(true);
+		}
+	}
 }
