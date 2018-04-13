@@ -5,6 +5,13 @@ import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
 
+/**
+ * 
+ * @author Gauthier Puertas
+ * Classe exécutant les test unitaires pour la classe Calculatrice
+ *
+ */
+
 public class ApplicationTest extends TestCase{
 	public static Test suite()
 	{
